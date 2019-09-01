@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [LocLease]" parallel="classes">
+  <parameter name="reciever" value="Gautam galotia"/>
+  <parameter name="author" value="Poonam Pandey"/>
+  <test name="US 138906(failed)" parallel="classes">
+    <parameter name="reciever" value="Gautam galotia"/>
+    <parameter name="author" value="Poonam Pandey"/>
+    <classes>
+      <class name="main.NewUserStories.DependenciesClass">
+        <methods>
+          <include name="car1"/>
+          <include name="scooter2"/>
+          <include name="scooter3"/>
+          <include name="Sedan"/>
+          <include name="scooter1"/>
+        </methods>
+      </class> <!-- main.NewUserStories.DependenciesClass -->
+    </classes>
+  </test> <!-- US 138906(failed) -->
+</suite> <!-- Failed suite [LocLease] -->

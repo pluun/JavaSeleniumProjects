@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="13" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="LocLease" duration-ms="131" started-at="2019-08-12T13:39:57Z" finished-at="2019-08-12T13:39:58Z">
+    <groups>
+      <group name="Cars">
+        <method signature="DependenciesClass.car1(java.lang.String, java.lang.String)[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="car1" class="main.NewUserStories.DependenciesClass"/>
+        <method signature="DependenciesClass.car2()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="car2" class="main.NewUserStories.DependenciesClass"/>
+        <method signature="DependenciesClass.car3()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="car3" class="main.NewUserStories.DependenciesClass"/>
+      </group> <!-- Cars -->
+      <group name="Scooter">
+        <method signature="DependenciesClass.scooter1()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="scooter1" class="main.NewUserStories.DependenciesClass"/>
+        <method signature="DependenciesClass.scooter2()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="scooter2" class="main.NewUserStories.DependenciesClass"/>
+        <method signature="DependenciesClass.scooter3()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="scooter3" class="main.NewUserStories.DependenciesClass"/>
+      </group> <!-- Scooter -->
+      <group name="Sedan">
+        <method signature="DependenciesClass.Sedan()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="Sedan" class="main.NewUserStories.DependenciesClass"/>
+      </group> <!-- Sedan -->
+    </groups>
+    <test name="US 138906" duration-ms="71" started-at="2019-08-12T13:39:57Z" finished-at="2019-08-12T13:39:58Z">
+      <class name="main.NewUserStories.DependenciesClass">
+        <test-method status="PASS" signature="Sedan()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="Sedan" duration-ms="20" started-at="2019-08-12T19:09:57Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sedan -->
+        <test-method status="PASS" signature="scooter2()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="scooter2" duration-ms="0" depends-on-groups="Sedan" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scooter2 -->
+        <test-method status="PASS" signature="scooter3()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="scooter3" duration-ms="0" depends-on-groups="Sedan" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scooter3 -->
+        <test-method status="PASS" signature="scooter1()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="scooter1" duration-ms="0" depends-on-groups="Sedan" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scooter1 -->
+        <test-method status="FAIL" signature="car1(java.lang.String, java.lang.String)[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="car1" duration-ms="0" depends-on-groups="Scooter, Sedan" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Method car1 requires 2 parameters but 0 were supplied in the @Test annotation.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Method car1 requires 2 parameters but 0 were supplied in the @Test annotation.
+	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:198)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:134)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:370)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:447)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- car1 -->
+        <test-method status="PASS" signature="car2()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="car2" duration-ms="0" depends-on-groups="Scooter, Sedan" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- car2 -->
+        <test-method status="PASS" signature="car3()[pri:0, instance:main.NewUserStories.DependenciesClass@7f9fcf7f]" name="car3" duration-ms="0" depends-on-groups="Scooter, Sedan" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- car3 -->
+      </class> <!-- main.NewUserStories.DependenciesClass -->
+    </test> <!-- US 138906 -->
+    <test name="US 138907" duration-ms="20" started-at="2019-08-12T13:39:58Z" finished-at="2019-08-12T13:39:58Z">
+      <class name="main.NewUserStories.MyClass">
+        <test-method status="PASS" signature="runWebDriver()[pri:0, instance:main.NewUserStories.MyClass@5762806e]" name="runWebDriver" duration-ms="10" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runWebDriver -->
+        <test-method status="PASS" signature="runWebDriver()[pri:0, instance:main.NewUserStories.MyClass@5762806e]" name="runWebDriver" duration-ms="10" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runWebDriver -->
+        <test-method status="PASS" signature="runWebDriver()[pri:0, instance:main.NewUserStories.MyClass@5762806e]" name="runWebDriver" duration-ms="10" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runWebDriver -->
+        <test-method status="PASS" signature="runWebDriver()[pri:0, instance:main.NewUserStories.MyClass@5762806e]" name="runWebDriver" duration-ms="0" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runWebDriver -->
+        <test-method status="PASS" signature="runWebDriver()[pri:0, instance:main.NewUserStories.MyClass@5762806e]" name="runWebDriver" duration-ms="0" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runWebDriver -->
+        <test-method status="PASS" signature="runWebDriver()[pri:0, instance:main.NewUserStories.MyClass@5762806e]" name="runWebDriver" duration-ms="0" started-at="2019-08-12T19:09:58Z" finished-at="2019-08-12T19:09:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runWebDriver -->
+      </class> <!-- main.NewUserStories.MyClass -->
+    </test> <!-- US 138907 -->
+  </suite> <!-- LocLease -->
+</testng-results>
